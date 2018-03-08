@@ -1,0 +1,23 @@
+int, string, string[], char
+
+int -> string:
+String.valueOf(number) (my preference)
+"" + number (I don't know how the compiler handles it, perhaps it is as efficient as the above)
+Integer.toString(number)
+
+StringBuffer or StringBuilder:
+
+int number = -782;
+StringBuffer sb = new StringBuffer();
+sb.append(number);
+String numberAsString = sb.toString();
+
+int number = -782;
+StringBuilder sb = new StringBuilder();
+sb.append(number);
+String numberAsString = sb.toString();
+
+string -> int
+
+String number = "10";
+int result = Integer.parseInt(number);
