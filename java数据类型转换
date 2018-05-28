@@ -21,3 +21,12 @@ string -> int
 
 String number = "10";
 int result = Integer.parseInt(number);
+
+string -> char
+比如把一个string分离每一个char，并放入set中:
+
+for(char c: s.toCharArray()){
+  set.add(c);
+}
+
+这里toCharArray是把string变成了Array[],所以用for循环遍历这个array中的每一个元素，即可得到每一个字符
