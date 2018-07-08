@@ -30,3 +30,9 @@ for(char c: s.toCharArray()){
 }
 
 这里toCharArray是把string变成了Array[],所以用for循环遍历这个array中的每一个元素，即可得到每一个字符
+
+char -> int
+直接减去'0'即可
+char a = '8';
+'8' - '0' = 8;
+注意：char里面只能有一个字符，所以'12' - '0'是不可能的，'12'是字符串，不是char
